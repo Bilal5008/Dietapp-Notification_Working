@@ -1,0 +1,632 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?attr/backgroundColor"
+        android:orientation="vertical"
+        android:paddingBottom="20dp">
+
+
+        <RelativeLayout
+
+            android:id="@+id/id_timer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:foreground="?selectableItemBackground"
+            android:orientation="horizontal"
+            android:paddingStart="@dimen/activity_horizontal_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingEnd="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin">
+
+
+            <TextView
+
+                android:id="@+id/id_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="8dp"
+                android:padding="2dp"
+                android:text="12 Sep 2019, 14:13"
+                android:textColor="@color/colororange"
+                android:textSize="22dp"
+
+
+                android:textStyle="bold" />
+
+            <!--            <LinearLayout-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:layout_below="@+id/id_time"-->
+            <!--                    android:layout_marginTop="10dp"-->
+            <!--                    android:background="?attr/cardbackground"-->
+            <!--                    android:gravity="center"-->
+            <!--                    android:orientation="horizontal">-->
+
+            <!--                <ImageView-->
+            <!--                        android:id="@+id/id_selectdiet"-->
+            <!--                        android:layout_width="80dp"-->
+            <!--                        android:layout_height="80dp"-->
+            <!--                        android:layout_marginRight="20dp" android:src="@drawable/ninfactirfastforwardbutton"/>-->
+
+            <!--                &lt;!&ndash;<ImageView&ndash;&gt;-->
+            <!--                &lt;!&ndash;android:id="@+id/id_image"&ndash;&gt;-->
+            <!--                &lt;!&ndash;android:layout_marginRight="20dp"&ndash;&gt;-->
+            <!--                &lt;!&ndash;android:src="@drawable/ninfactorimage"&ndash;&gt;-->
+            <!--                &lt;!&ndash;android:layout_width="wrap_content" android:layout_height="wrap_content"/>&ndash;&gt;-->
+
+            <!--                <include-->
+
+
+            <!--                        layout="@layout/nin_factor">-->
+
+
+            <!--                </include>-->
+            <!--            </LinearLayout>-->
+
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="?attr/cardbackground"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+                <LinearLayout
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:background="?attr/cardbackground"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+
+                    android:padding="2dp"
+                    android:text="Welcome"
+                    android:textColor="@color/colororange"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+
+                        android:src="@drawable/ninfactirfastforwardbutton" />
+
+                </LinearLayout>
+
+                <include
+
+
+                    layout="@layout/nin_factor">
+
+
+                </include>
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+        <include
+            android:id="@+id/id_breath_air"
+            layout="@layout/breath_item_layout">
+
+
+        </include>
+
+        <include
+
+            android:id="@+id/id_sleep"
+            layout="@layout/sleep_item_layout">
+
+
+        </include>
+
+
+        <include
+
+            android:id="@+id/id_water"
+            layout="@layout/water_item_layout">
+
+
+        </include>
+
+        <include
+
+            android:id="@+id/id_excercise"
+            layout="@layout/excercise_item_layout">
+
+
+        </include>
+
+        <include
+
+            android:id="@+id/id_eat_healthy"
+            layout="@layout/eat_healthy_item_layout">
+
+
+        </include>
+
+        <include
+
+            android:id="@+id/id_go_out"
+            layout="@layout/sun_item_layout">
+
+
+        </include>
+
+        <include
+
+            android:id="@+id/id_blief"
+            layout="@layout/belief_item_layout">
+
+
+        </include>
+
+        <include
+
+            android:id="@+id/id_tech"
+            layout="@layout/tech_item_layout">
+
+
+        </include>
+
+        <include
+
+            android:id="@+id/id_control"
+            layout="@layout/control_item_layout">
+
+
+        </include>
+
+
+        <!--<RelativeLayout-->
+        <!--android:layout_marginTop="40dp"-->
+        <!--android:id="@+id/id_sleep"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="?attr/listPreferredItemHeight"-->
+        <!--android:paddingStart="@dimen/activity_horizontal_margin"-->
+        <!--android:paddingEnd="@dimen/activity_horizontal_margin"-->
+        <!--android:paddingLeft="@dimen/activity_horizontal_margin"-->
+        <!--android:paddingRight="@dimen/activity_horizontal_margin"-->
+        <!--android:clickable="true">-->
+
+        <!--<ImageView-->
+        <!--android:src="@drawable/circualaroutline"-->
+        <!--android:id="@+id/id_image"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--/>-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/id_sleep_text"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:padding="12sp"-->
+        <!--android:text="Sleep"-->
+        <!--android:gravity="center_vertical"-->
+        <!--android:layout_toEndOf="@+id/id_image"-->
+
+        <!--android:layout_alignTop="@+id/id_image" android:layout_marginTop="0dp"/>-->
+        <!--<TextView-->
+        <!--android:id="@+id/id_sleep_text"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:padding="12sp"-->
+        <!--android:text="Sleep"-->
+        <!--android:gravity="center_vertical"-->
+        <!--android:layout_toEndOf="@+id/id_image"-->
+
+        <!--android:layout_alignTop="@+id/id_image" android:layout_marginTop="0dp"/>-->
+
+
+        <!--<ImageView-->
+        <!--android:id="@+id/id_sleep_image"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:padding="12dp"-->
+        <!--android:layout_alignParentEnd="true"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:tint="@color/colorPrimaryDark"-->
+        <!--android:src="@drawable/ic_alarm_white_24dp"/>-->
+
+        <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="1dp"-->
+        <!--android:layout_marginBottom="@dimen/list_padding_vertical_small"-->
+        <!--android:background="@drawable/divider"/>-->
+
+
+        <!--</RelativeLayout>-->
+
+
+        <!--<RelativeLayout-->
+        <!--android:id="@+id/id_excercise"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="?attr/listPreferredItemHeight"-->
+        <!--android:paddingStart="@dimen/activity_horizontal_margin"-->
+        <!--android:paddingEnd="@dimen/activity_horizontal_margin"-->
+        <!--android:paddingLeft="@dimen/activity_horizontal_margin"-->
+        <!--android:paddingRight="@dimen/activity_horizontal_margin"-->
+        <!--android:foreground="?selectableItemBackground"-->
+        <!--android:clickable="true">-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/id_excercise_text"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:padding="12sp"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:layout_alignParentStart="true"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:tint="@color/colorPrimaryDark"-->
+        <!--android:text="Excercise"-->
+        <!--/>-->
+
+
+        <!--<ImageView-->
+        <!--android:id="@+id/id_excercise_image"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:padding="12dp"-->
+        <!--android:layout_alignParentEnd="true"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:tint="@color/colorPrimaryDark"-->
+        <!--android:src="@drawable/ic_alarm_white_24dp"/>-->
+
+        <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="1dp"-->
+        <!--android:layout_marginBottom="@dimen/list_padding_vertical_small"-->
+        <!--android:background="@drawable/divider"/>-->
+
+
+        <!--</RelativeLayout>-->
+
+
+        <!--<RelativeLayout-->
+        <!--android:id="@+id/id_water"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="?attr/listPreferredItemHeight"-->
+        <!--android:paddingStart="@dimen/activity_horizontal_margin"-->
+        <!--android:paddingEnd="@dimen/activity_horizontal_margin"-->
+        <!--android:paddingLeft="@dimen/activity_horizontal_margin"-->
+        <!--android:paddingRight="@dimen/activity_horizontal_margin"-->
+        <!--android:foreground="?selectableItemBackground"-->
+        <!--android:clickable="true">-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/id_water_text"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:padding="12sp"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:layout_alignParentStart="true"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:tint="@color/colorPrimaryDark"-->
+
+        <!--android:text="Water"/>-->
+
+
+        <!--<ImageView-->
+        <!--android:id="@+id/id_water_image"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:padding="12dp"-->
+        <!--android:layout_alignParentEnd="true"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:tint="@color/colorPrimaryDark"-->
+        <!--android:src="@drawable/ic_alarm_white_24dp"/>-->
+
+        <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="1dp"-->
+        <!--android:layout_marginBottom="@dimen/list_padding_vertical_small"-->
+        <!--android:background="@drawable/divider"/>-->
+
+
+        <!--</RelativeLayout>-->
+        <!--<RelativeLayout-->
+        <!--android:id="@+id/id_xx"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="?attr/listPreferredItemHeight"-->
+        <!--android:paddingStart="@dimen/activity_horizontal_margin"-->
+        <!--android:paddingEnd="@dimen/activity_horizontal_margin"-->
+        <!--android:paddingLeft="@dimen/activity_horizontal_margin"-->
+        <!--android:paddingRight="@dimen/activity_horizontal_margin"-->
+        <!--android:foreground="?selectableItemBackground"-->
+        <!--android:clickable="true">-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/id_xx_text"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:padding="12sp"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:layout_alignParentStart="true"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:tint="@color/colorPrimaryDark"-->
+        <!--android:text="xx example"-->
+        <!--/>-->
+
+
+        <!--<ImageView-->
+        <!--android:id="@+id/id_xx_image"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:padding="12dp"-->
+        <!--android:layout_alignParentEnd="true"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:tint="@color/colorPrimaryDark"-->
+        <!--android:src="@drawable/ic_alarm_white_24dp"/>-->
+
+        <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="1dp"-->
+        <!--android:layout_marginBottom="@dimen/list_padding_vertical_small"-->
+        <!--android:background="@drawable/divider"/>-->
+
+
+        <!--</RelativeLayout>-->
+
+
+        <!--<RelativeLayout-->
+        <!--android:id="@+id/id_yy"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="?attr/listPreferredItemHeight"-->
+        <!--android:paddingStart="@dimen/activity_horizontal_margin"-->
+        <!--android:paddingEnd="@dimen/activity_horizontal_margin"-->
+        <!--android:paddingLeft="@dimen/activity_horizontal_margin"-->
+        <!--android:paddingRight="@dimen/activity_horizontal_margin"-->
+        <!--android:foreground="?selectableItemBackground"-->
+        <!--android:clickable="true">-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/id_yy_text"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:padding="12sp"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:layout_alignParentStart="true"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:tint="@color/colorPrimaryDark"-->
+        <!--android:text="yy example"-->
+        <!--/>-->
+
+
+        <!--<ImageView-->
+        <!--android:id="@+id/id_yy_image"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:padding="12dp"-->
+        <!--android:layout_alignParentEnd="true"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:tint="@color/colorPrimaryDark"-->
+        <!--android:src="@drawable/ic_alarm_white_24dp"/>-->
+
+        <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="1dp"-->
+        <!--android:layout_marginBottom="@dimen/list_padding_vertical_small"-->
+        <!--android:background="@drawable/divider"/>-->
+
+
+        <!--</RelativeLayout>-->
+
+        <!--<RelativeLayout-->
+        <!--android:id="@+id/id_meal"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="?attr/listPreferredItemHeight"-->
+        <!--android:paddingStart="@dimen/activity_horizontal_margin"-->
+        <!--android:paddingEnd="@dimen/activity_horizontal_margin"-->
+        <!--android:paddingLeft="@dimen/activity_horizontal_margin"-->
+        <!--android:paddingRight="@dimen/activity_horizontal_margin"-->
+        <!--android:foreground="?selectableItemBackground"-->
+        <!--android:clickable="true">-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/id_meal_text"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:padding="12sp"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:layout_alignParentStart="true"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:tint="@color/colorPrimaryDark"-->
+        <!--android:text="Meal"-->
+        <!--/>-->
+
+
+        <!--<ImageView-->
+        <!--android:id="@+id/id_meal_image"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:padding="12dp"-->
+        <!--android:layout_alignParentEnd="true"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:tint="@color/colorPrimaryDark"-->
+        <!--android:src="@drawable/ic_alarm_white_24dp"/>-->
+
+        <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="1dp"-->
+        <!--android:layout_marginBottom="@dimen/list_padding_vertical_small"-->
+        <!--android:background="@drawable/divider"/>-->
+
+
+        <!--</RelativeLayout>-->
+
+
+        <!--<RelativeLayout-->
+        <!--android:id="@+id/id_habit"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="?attr/listPreferredItemHeight"-->
+        <!--android:paddingStart="@dimen/activity_horizontal_margin"-->
+        <!--android:paddingEnd="@dimen/activity_horizontal_margin"-->
+        <!--android:paddingLeft="@dimen/activity_horizontal_margin"-->
+        <!--android:paddingRight="@dimen/activity_horizontal_margin"-->
+        <!--android:foreground="?selectableItemBackground"-->
+        <!--android:clickable="true">-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/id_habit_text"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:padding="12sp"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:layout_alignParentStart="true"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:tint="@color/colorPrimaryDark"-->
+        <!--android:text="Habit"-->
+        <!--/>-->
+
+
+        <!--<ImageView-->
+        <!--android:id="@+id/id_habit_image"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:padding="12dp"-->
+        <!--android:layout_alignParentEnd="true"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:tint="@color/colorPrimaryDark"-->
+        <!--android:src="@drawable/ic_alarm_white_24dp"/>-->
+
+        <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="1dp"-->
+        <!--android:layout_marginBottom="@dimen/list_padding_vertical_small"-->
+        <!--android:background="@drawable/divider"/>-->
+
+
+        <!--</RelativeLayout>-->
+
+
+        <!--<RelativeLayout-->
+        <!--android:id="@+id/id_ketos"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="?attr/listPreferredItemHeight"-->
+        <!--android:paddingStart="@dimen/activity_horizontal_margin"-->
+        <!--android:paddingEnd="@dimen/activity_horizontal_margin"-->
+        <!--android:paddingLeft="@dimen/activity_horizontal_margin"-->
+        <!--android:paddingRight="@dimen/activity_horizontal_margin"-->
+        <!--android:foreground="?selectableItemBackground"-->
+        <!--android:clickable="true">-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/id_ketos_text"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:padding="12sp"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:layout_alignParentStart="true"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:tint="@color/colorPrimaryDark"-->
+        <!--android:text="Ketos Diet"-->
+        <!--/>-->
+
+
+        <!--<ImageView-->
+        <!--android:id="@+id/id_ketos_image"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:padding="12dp"-->
+        <!--android:layout_alignParentEnd="true"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:tint="@color/colorPrimaryDark"-->
+        <!--android:src="@drawable/ic_alarm_white_24dp"/>-->
+
+        <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="1dp"-->
+        <!--android:layout_marginBottom="@dimen/list_padding_vertical_small"-->
+        <!--android:background="@drawable/divider"/>-->
+
+
+        <!--</RelativeLayout>-->
+
+
+        <!--<RelativeLayout-->
+        <!--android:id="@+id/id_prayer"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="?attr/listPreferredItemHeight"-->
+        <!--android:paddingStart="@dimen/activity_horizontal_margin"-->
+        <!--android:paddingEnd="@dimen/activity_horizontal_margin"-->
+        <!--android:paddingLeft="@dimen/activity_horizontal_margin"-->
+        <!--android:paddingRight="@dimen/activity_horizontal_margin"-->
+        <!--android:foreground="?selectableItemBackground"-->
+        <!--android:clickable="true">-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/id_prayer_text"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:padding="12sp"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:layout_alignParentStart="true"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:tint="@color/colorPrimaryDark"-->
+        <!--android:text="Prayer"-->
+        <!--/>-->
+
+
+        <!--<ImageView-->
+        <!--android:id="@+id/id_prayer_image"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:padding="12dp"-->
+        <!--android:layout_alignParentEnd="true"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:tint="@color/colorPrimaryDark"-->
+        <!--android:src="@drawable/ic_alarm_white_24dp"/>-->
+
+        <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="1dp"-->
+        <!--android:layout_marginBottom="@dimen/list_padding_vertical_small"-->
+        <!--android:background="@drawable/divider"/>-->
+
+
+        <!--</RelativeLayout>-->
+
+
+    </LinearLayout>
+</ScrollView>

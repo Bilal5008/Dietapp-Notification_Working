@@ -1,0 +1,69 @@
+<resources>
+    <!--Light/Day Mode theme-->
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="backgroundColor">@color/backgroundColor</item>
+        <item name="cardbackground">@color/cardbackground</item>
+        <item name="textcolor">@color/textcolor</item>
+
+        <item name="tintcolor">@color/tintcolor</item>
+        <item name="buttoncolor">@color/buttoncolor</item>
+        <item name="android:windowAnimationStyle">@style/WindowsAnimationTransition</item>
+
+    </style>
+
+    <style name="ThemeDayNight" parent="Theme.AppCompat.DayNight.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+    <!--dark/night Mode theme-->
+
+    <style name="darkTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/dcolorPrimary</item>
+        <item name="colorPrimaryDark">@color/dcolorPrimaryDark</item>
+        <item name="colorAccent">@color/dcolorAccent</item>
+        <item name="backgroundColor">@color/dcolorPrimaryDark</item>
+        <item name="cardbackground">@color/dcardbackground</item>
+
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:editable">@android:color/white</item>
+        <item name="tintcolor">@color/dtintcolor</item>
+        <item name="buttoncolor">@color/dbuttoncolor</item>
+        <item name="android:windowAnimationStyle">@style/WindowsAnimationTransition</item>
+    </style>
+
+    <style name="WindowsAnimationTransition">
+
+        <item name="android:windowEnterAnimation">@android:anim/fade_in</item>
+        <item name="android:windowExitAnimation">@android:anim/fade_out</item>
+
+    </style>
+
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+
+    <style name="word_title">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">26dp</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginBottom">6dp</item>
+        <item name="android:paddingLeft">8dp</item>
+    </style>
+
+
+</resources>

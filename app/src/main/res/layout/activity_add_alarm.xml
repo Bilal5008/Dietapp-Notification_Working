@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:scrollbarStyle="outsideOverlay">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?attr/backgroundColor"
+        android:orientation="vertical">
+
+
+        <!--        <LinearLayout-->
+        <!--                android:background="?attr/cardbackground"-->
+        <!--                android:layout_below="@+id/id_time"-->
+        <!--                android:layout_marginTop="10dp"-->
+        <!--                android:gravity="center"-->
+        <!--                android:orientation="horizontal"-->
+        <!--                android:layout_width="match_parent" android:layout_height="wrap_content">-->
+
+        <!--            <ImageView-->
+        <!--                    android:id="@+id/id_selectdiet"-->
+        <!--                    android:layout_marginRight="20dp"-->
+        <!--                    android:src="@drawable/ninfactirfastforwardbutton"-->
+        <!--                    android:layout_width="80dp" android:layout_height="80dp"/>-->
+
+        <!--            <ImageView-->
+        <!--                    android:id="@+id/id_image"-->
+        <!--                    android:layout_marginRight="20dp"-->
+        <!--                    android:src="@drawable/ninfactorimage"-->
+        <!--                    android:layout_width="wrap_content" android:layout_height="wrap_content"/>-->
+
+
+        <!--        </LinearLayout>-->
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="?attr/cardbackground"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:background="?attr/cardbackground"
+                android:gravity="center"
+                android:orientation="vertical">
+
+
+                android:padding="2dp"
+                android:text="Welcome"
+                android:textColor="@color/colororange"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+
+                    android:src="@drawable/ninfactirfastforwardbutton" />
+
+            </LinearLayout>
+
+            <include
+
+
+                layout="@layout/nin_factor">
+
+
+            </include>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/id_factor_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/id_header">
+
+
+            <include
+                android:id="@+id/id_breath_air"
+                layout="@layout/breath_item_layout"
+                android:visibility="gone">
+
+
+            </include>
+
+            <include
+                android:id="@+id/id_sleep"
+                layout="@layout/sleep_item_layout"
+                android:visibility="gone">
+
+
+            </include>
+
+
+            <include
+                android:id="@+id/id_water"
+                layout="@layout/water_item_layout"
+                android:visibility="gone">
+
+
+            </include>
+
+            <include
+                android:id="@+id/id_excercise"
+                layout="@layout/excercise_item_layout"
+                android:visibility="gone">
+
+
+            </include>
+
+            <include
+                android:id="@+id/id_eat_healthy"
+                layout="@layout/eat_healthy_item_layout"
+                android:visibility="gone">
+
+
+            </include>
+
+            <include
+                android:id="@+id/id_go_out"
+                layout="@layout/sun_item_layout"
+                android:visibility="gone">
+
+
+            </include>
+
+            <include
+                android:id="@+id/id_blief"
+                layout="@layout/belief_item_layout"
+                android:visibility="gone">
+
+
+            </include>
+
+            <include
+                android:id="@+id/id_tech"
+                layout="@layout/tech_item_layout"
+                android:visibility="gone">
+
+
+            </include>
+
+            <include
+                android:id="@+id/id_control"
+                layout="@layout/control_item_layout"
+                android:visibility="gone">
+
+
+            </include>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingBottom="@dimen/activity_vertical_margin">
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/list_padding_vertical_small"
+                android:text="@string/time"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                tools:text="Time" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="@dimen/list_padding_vertical_small"
+                android:background="@drawable/divider" />
+
+
+            <TextView
+                android:id="@+id/edit_alarm_time_picker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:clickable="true"
+                android:focusable="true"
+                android:text="@string/set_reminder"
+                android:textSize="35sp" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/list_padding_vertical_small"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                tools:text="Options" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="@dimen/list_padding_vertical_small"
+                android:background="@drawable/divider" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/id_vib"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/padd_10"
+                    android:button="@drawable/vibration_selection"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false" />
+
+                <CheckBox
+                    android:id="@+id/id_ring"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/padd_10"
+                    android:button="@drawable/ring_selection"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false" />
+
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/list_padding_vertical_small"
+                android:text="@string/days"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                tools:text="Days" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/list_padding_vertical_small"
+                tools:text="@string/yourcurrent" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="@dimen/list_padding_vertical_small"
+                android:background="@drawable/divider" />
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="2">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/monday"
+                    app:layout_gravity="center_vertical|fill_horizontal"
+                    tools:text="Monday" />
+
+                <CheckBox
+                    android:id="@+id/edit_alarm_mon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16sp"
+                    android:buttonTint="?attr/tintcolor"
+                    app:layout_gravity="center_vertical" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16sp"
+                    android:buttonTint="?attr/tintcolor"
+                    android:text="@string/tuesday"
+                    app:layout_gravity="center_vertical|fill_horizontal"
+                    tools:text="Tuesday" />
+
+                <CheckBox
+                    android:id="@+id/edit_alarm_tues"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16sp"
+                    android:buttonTint="?attr/tintcolor"
+                    app:layout_gravity="center_vertical" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16sp"
+                    android:buttonTint="?attr/tintcolor"
+                    android:text="@string/wednesday"
+                    app:layout_gravity="center_vertical|fill_horizontal"
+                    tools:text="Wednesday" />
+
+                <CheckBox
+                    android:id="@+id/edit_alarm_wed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16sp"
+                    android:buttonTint="?attr/tintcolor"
+                    app:layout_gravity="center_vertical" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16sp"
+                    android:buttonTint="?attr/tintcolor"
+                    android:text="@string/thursday"
+                    app:layout_gravity="center_vertical|fill_horizontal"
+                    tools:text="Thursday" />
+
+                <CheckBox
+
+                    android:id="@+id/edit_alarm_thurs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16sp"
+                    android:buttonTint="?attr/tintcolor"
+                    app:layout_gravity="center_vertical" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16sp"
+                    android:buttonTint="?attr/tintcolor"
+                    android:text="@string/friday"
+                    app:layout_gravity="center_vertical|fill_horizontal"
+                    tools:text="Friday" />
+
+                <CheckBox
+                    android:id="@+id/edit_alarm_fri"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16sp"
+                    android:buttonTint="?attr/tintcolor"
+                    app:layout_gravity="center_vertical" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16sp"
+                    android:buttonTint="?attr/tintcolor"
+                    android:text="@string/saturday"
+                    app:layout_gravity="center_vertical|fill_horizontal"
+                    tools:text="Saturday" />
+
+                <CheckBox
+                    android:id="@+id/edit_alarm_sat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16sp"
+                    android:buttonTint="?attr/tintcolor"
+                    app:layout_gravity="center_vertical" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16sp"
+                    android:buttonTint="?attr/tintcolor"
+                    android:text="@string/sunday"
+                    app:layout_gravity="center_vertical|fill_horizontal"
+                    tools:text="Sunday" />
+
+                <CheckBox
+                    android:id="@+id/edit_alarm_sun"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16sp"
+                    android:buttonTint="?attr/tintcolor"
+                    app:layout_gravity="center_vertical" />
+
+
+            </GridLayout>
+
+
+            <Button
+                android:id="@+id/alarm_save"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colororange"
+                android:text="@string/button_save"
+                android:textColor="@color/buttonLabel"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

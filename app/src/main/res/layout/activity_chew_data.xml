@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/backgroundColor"
+    tools:context=".activities.AddNewReminderActivity">
+
+
+    <LinearLayout
+
+        android:id="@+id/id_table"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colororange"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <TextView
+            android:id="@+id/id_time"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="top"
+            android:layout_weight="1"
+            android:background="@drawable/table_header_cell_bg"
+            android:buttonTint="?attr/tintcolor"
+            android:gravity="center"
+            android:text="Time"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/id_eat_title"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:layout_weight="1"
+            android:background="@drawable/table_header_cell_bg"
+            android:gravity="center"
+            android:text="Meal"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/id_cycleno"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="top"
+            android:layout_weight="1"
+            android:background="@drawable/table_header_cell_bg"
+            android:gravity="center"
+            android:text="Bites"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/id_cycleinterval"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="top"
+            android:layout_weight="1"
+            android:background="@drawable/table_header_cell_bg"
+            android:gravity="center"
+            android:text="Total Time"
+            android:textAlignment="center"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/fab"
+        android:layout_below="@+id/id_table"
+        tools:listitem="@layout/table_list_item" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        android:src="@drawable/ic_add"
+        app:backgroundTint="@color/colororange" />
+
+
+    <ImageView
+        android:id="@+id/id_firsTime"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/tutroial_2"
+
+        />
+
+
+</RelativeLayout>

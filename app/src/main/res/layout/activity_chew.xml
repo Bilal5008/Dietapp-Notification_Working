@@ -1,0 +1,540 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/backgroundColor">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?attr/backgroundColor">
+
+        <LinearLayout
+            android:id="@+id/id_upper_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            custom:layout_constraintStart_toStartOf="parent"
+            custom:layout_constraintTop_toTopOf="parent">
+
+            <!--            <Button-->
+            <!--                    android:id="@+id/id_default"-->
+            <!--                    android:layout_width="200dp"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:layout_weight="1"-->
+
+            <!--                    android:background="@color/colororange"-->
+            <!--                    android:padding="@dimen/padd_10"-->
+            <!--                    android:text="Default = 32"-->
+            <!--                    android:textColor="@color/cmtp_white"-->
+            <!--                    custom:layout_constraintBottom_toTopOf="@+id/donut_progress"-->
+            <!--                    custom:layout_constraintStart_toStartOf="parent" />-->
+
+            <LinearLayout
+                android:id="@+id/id_cycle_layout"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/padd_10"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                custom:layout_constraintStart_toEndOf="@+id/id_default"
+                custom:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ENTER CHEW NUMBER"
+                    android:textAlignment="center"
+
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+
+                <EditText
+                    android:id="@+id/id_cycle_text"
+                    android:layout_width="80dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/rectangle_text"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:text="32"
+                    android:textAlignment="center" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/id_bit_paused"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/padd_10"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                custom:layout_constraintEnd_toEndOf="parent"
+                custom:layout_constraintLeft_toRightOf="@+id/id_upper_layout"
+                custom:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ENTER PAUSE TIME"
+                    android:textAlignment="center"
+
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+
+                <EditText
+                    android:id="@+id/id_paused_text"
+                    android:layout_width="80dp"
+                    android:layout_height="50dp"
+
+                    android:background="@drawable/rectangle_text"
+                    android:inputType="number"
+                    android:maxLength="1"
+                    android:text="5"
+                    android:textAlignment="center" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/id_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20sp"
+            android:layout_marginRight="@dimen/padd_10"
+            android:padding="@dimen/padd_10"
+            android:text="Default = 32"
+            android:textColor="@color/colororange"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:visibility="gone"
+            custom:layout_constraintEnd_toEndOf="parent"
+            custom:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteY="27dp" />
+
+        <com.github.lzyzsd.circleprogress.DonutProgress
+            android:id="@+id/donut_progress"
+            android:layout_width="270dp"
+            android:layout_height="270dp"
+
+
+            android:visibility="visible"
+            custom:donut_finished_color="@color/colororange"
+            custom:donut_progress="0"
+            custom:donut_text_color="@color/colororange"
+
+            custom:layout_constraintStart_toStartOf="parent"
+            custom:layout_constraintTop_toBottomOf="@+id/id_upper_layout" />
+
+
+        <TextView
+
+            android:id="@+id/id_default_chewing"
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/rectangle_text"
+            android:gravity="center"
+            android:text="DEFAULT CHEWING NUMBER = 32"
+            android:textAlignment="gravity"
+            custom:layout_constraintEnd_toEndOf="parent"
+            custom:layout_constraintTop_toBottomOf="@+id/id_upper_layout">
+
+
+        </TextView>
+
+        <TextView
+
+            android:id="@+id/id_pause_time"
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/rectangle_text"
+            android:gravity="center"
+            android:text="DEFAULT CHEWING NUMBER = 5"
+            android:textAlignment="gravity"
+            custom:layout_constraintEnd_toEndOf="parent"
+            custom:layout_constraintTop_toBottomOf="@+id/id_default_chewing">
+
+
+        </TextView>
+
+        <com.github.lzyzsd.circleprogress.DonutProgress
+            android:id="@+id/donut_wait"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="8dp"
+
+            android:visibility="visible"
+            custom:donut_finished_color="@color/colororange"
+            custom:donut_progress="0"
+            custom:donut_text_color="@color/colororange"
+            custom:layout_constraintEnd_toEndOf="parent"
+            custom:layout_constraintTop_toBottomOf="@+id/id_pause_time" />
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="00:00:00"
+            android:textAlignment="center"
+            android:textColor="@color/colororange"
+            android:textSize="50dp"
+            android:textStyle="bold"
+            custom:layout_constraintEnd_toEndOf="parent"
+            custom:layout_constraintStart_toStartOf="parent"
+            custom:layout_constraintTop_toBottomOf="@+id/donut_progress" />
+
+
+        <LinearLayout
+            android:id="@+id/buttons_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="4"
+            custom:layout_constraintEnd_toEndOf="parent"
+            custom:layout_constraintStart_toStartOf="parent"
+            custom:layout_constraintTop_toBottomOf="@+id/textView">
+
+            <Button
+                android:id="@+id/id_pause"
+                android:layout_width="wrap_content"
+                android:layout_height="40sp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@color/colororange"
+                android:text="Pause"
+                android:textColor="@color/cmtp_white"
+
+                />
+
+            <Button
+                android:id="@+id/id_reset"
+                android:layout_width="wrap_content"
+                android:layout_height="40sp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@color/colororange"
+                android:text="Reset"
+
+                android:textColor="@color/cmtp_white" />
+
+
+            <Button
+                android:id="@+id/id_start"
+                android:layout_width="wrap_content"
+                android:layout_height="40sp"
+                android:layout_below="@+id/textView"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@color/colororange"
+
+                android:text="Start"
+                android:textColor="@color/cmtp_white" />
+
+            <Button
+                android:id="@+id/id_resume"
+                android:layout_width="wrap_content"
+                android:layout_height="40sp"
+                android:layout_below="@+id/textView"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@color/colororange"
+                android:text="Resume"
+
+                android:textColor="@color/cmtp_white"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/id_stop"
+                android:layout_width="wrap_content"
+                android:layout_height="40sp"
+                android:layout_below="@+id/textView"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@color/colororange"
+                android:text="Stop"
+
+                android:textColor="@color/cmtp_white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/id_sound_vib_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:weightSum="2"
+            custom:layout_constraintEnd_toEndOf="parent"
+
+            custom:layout_constraintStart_toStartOf="parent"
+            custom:layout_constraintTop_toBottomOf="@+id/buttons_layout">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="2dp"
+
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    custom:layout_constraintEnd_toEndOf="parent"
+
+                    custom:layout_constraintStart_toStartOf="parent"
+                    custom:layout_constraintTop_toBottomOf="@+id/buttons_layout">
+
+
+                    <CheckBox
+
+
+                        android:id="@+id/id_vib_phone_bit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="20dp"
+
+                        android:button="@drawable/vibration_selection"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:padding="@dimen/padd_10" />
+
+
+                    <CheckBox
+                        android:id="@+id/id_ring_phone_bit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/buttons_layout"
+                        android:layout_marginLeft="20dp"
+                        android:button="@drawable/ring_selection"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:padding="@dimen/padd_10" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Bites Paused"
+                    android:textAlignment="center"
+                    android:textColor="@color/colororange"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    custom:layout_constraintEnd_toEndOf="parent"
+
+                    custom:layout_constraintStart_toStartOf="parent">
+
+                    <CheckBox
+
+                        android:id="@+id/id_vib_phone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="20dp"
+
+                        android:button="@drawable/vibration_selection"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:padding="@dimen/padd_10" />
+
+
+                    <CheckBox
+                        android:id="@+id/id_ring_phone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/buttons_layout"
+                        android:layout_marginLeft="20dp"
+                        android:button="@drawable/ring_selection"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:padding="@dimen/padd_10" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Chewing "
+                    android:textAlignment="center"
+                    android:textColor="@color/colororange"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/id_progression"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:visibility="visible"
+            android:weightSum="2"
+            custom:layout_constraintEnd_toEndOf="parent"
+            custom:layout_constraintStart_toStartOf="parent"
+            custom:layout_constraintTop_toBottomOf="@+id/id_sound_vib_layout">
+
+
+            <!--            <LinearLayout-->
+
+
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_marginTop="2dp"-->
+            <!--                android:gravity="center"-->
+            <!--                android:orientation="vertical"-->
+
+            <!--                custom:layout_constraintTop_toBottomOf="@+id/id_progression">-->
+
+
+            <!--                <TextView-->
+            <!--                    android:id="@+id/listviewtext"-->
+
+            <!--                    android:layout_width="wrap_content"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:text="Number of bites"-->
+            <!--                    android:textColor="@color/colororange"-->
+            <!--                    android:textSize="20sp"-->
+            <!--                    android:textStyle="bold" />-->
+
+            <!--                <TextView-->
+            <!--                    android:id="@+id/id_total_no_of_bits"-->
+            <!--                    android:layout_width="wrap_content"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:layout_marginTop="5dp"-->
+            <!--                    android:text="0"-->
+            <!--                    android:textSize="20sp" />-->
+
+
+            <!--            </LinearLayout>-->
+
+            <LinearLayout
+                android:id="@+id/bites_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_alignParentEnd="true"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Total Bites"
+                    android:textAlignment="center"
+                    android:textColor="@color/colororange"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/id_total_bites"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="0"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/aa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/bites_layout"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Total Time"
+                    android:textColor="@color/colororange"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/id_total_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+
+                    android:text="0"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+<!--        <TextView-->
+<!--            android:id="@+id/id_morestats"-->
+<!--            android:layout_width="120dp"-->
+<!--            android:layout_height="60dp"-->
+<!--            android:background="@drawable/rectangle_text"-->
+<!--            android:gravity="center"-->
+<!--            android:text="More Stats "-->
+<!--            android:textAlignment="gravity"-->
+<!--            custom:layout_constraintEnd_toEndOf="parent"-->
+
+<!--            custom:layout_constraintTop_toBottomOf="@id/id_progression">-->
+
+<!--        </TextView>-->
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

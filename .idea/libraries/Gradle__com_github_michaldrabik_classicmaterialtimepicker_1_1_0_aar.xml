@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.michaldrabik:classicmaterialtimepicker:1.1.0@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/classicmaterialtimepicker-1.1.0.aar/486371ff4ab5232fb17576c2f7e98322/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/classicmaterialtimepicker-1.1.0.aar/486371ff4ab5232fb17576c2f7e98322/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.michaldrabik/classicmaterialtimepicker/1.1.0/d3bbf4d0d14658a5c7a142974139251739a6b272/classicmaterialtimepicker-1.1.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

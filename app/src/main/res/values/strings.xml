@@ -1,0 +1,145 @@
+<resources>
+    <string name="app_name">RoomLiveData</string>
+
+
+    <!-- Main Activity/Fragment -->
+    <string name="empty_view_text">Press the Floating Action Button to add an alarm!</string>
+
+    <!-- Edit Alarm Activity/Fragment -->
+    <string name="time">Time</string>
+    <string name="label">Label</string>
+    <string name="days">Days</string>
+    <string name="edit_alarm">Edit Alarm</string>
+    <string name="add_alarm">Add Alarm</string>
+    <string name="add_label_hint">Add a label!</string>
+    <string name="update_complete">Changes Saved</string>
+    <string name="update_failed">Update Failed</string>
+    <string name="delete_complete">Alarm Deleted</string>
+    <string name="delete_failed">Delete Failed</string>
+    <string name="delete_dialog_title">Confirm Delete Alarm</string>
+    <string name="delete_dialog_content">Are you sure you would like to delete this alarm?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+
+
+    <string name="hint_word">hint…</string>
+    <string name="button_save">Save</string>
+    <string name="empty_not_saved">empty not saved</string>
+    <string name="descripcion">descripcion</string>
+
+
+    <!-- Edit Alarm Menu -->
+    <string name="action_save">Save</string>
+    <string name="action_delete">Delete</string>
+
+    <!-- Alarm Landing Page Activity/Fragment -->
+    <string name="launch_main_activity">Launch Main Activity</string>
+    <string name="dismiss">Dismiss</string>
+
+    <!-- Days -->
+    <string name="monday">Monday</string>
+    <string name="tuesday">Tuesday</string>
+    <string name="wednesday">Wednesday</string>
+    <string name="thursday">Thursday</string>
+    <string name="friday">Friday</string>
+    <string name="saturday">Saturday</string>
+    <string name="sunday">Sunday</string>
+    <string name="datetime">Date and Time</string>
+    <string name="themeal">The Meal</string>
+    <string name="totalbits">Total Bites</string>
+    <string name="totaltime">Total Time</string>
+    <string name="diet_ff">DIET FF</string>
+    <string name="diet_fast">Diet Fast Forward</string>
+    <string name="today">Today</string>
+    <string name="keto">Ketosis</string>
+    <string name="fat_burn">Fat Burn</string>
+
+
+    <string name="breath_fress">Breath Fresh Air</string>
+    <string name="atlast_30">At least 30 minutes a day</string>
+
+
+    <string name="goodnight_sleep">Good Night Sleep</string>
+    <string name="atleast7_8">At least 7-8 hours a day</string>
+
+
+    <string name="drink_fresh">Drink Fresh Water</string>
+    <string name="a_glass_every">A glass every ca 2 hours</string>
+
+
+    <string name="physical_activity">Physical Activity</string>
+    <string name="times_a_day">At least 3 times per week</string>
+
+
+    <string name="eat_healthy">Eat Healthy Food</string>
+    <string name="optimal">Optimal 3 meals a day</string>
+
+
+    <string name="go_out_sun">Go out in the sun</string>
+    <string name="at_30_mins">At least 30 minutes a day</string>
+
+
+    <string name="belief">Belief is essential</string>
+    <string name="at_lest_30">At least 30 minutes a day</string>
+
+    <string name="use_the_tech">Use the TECH</string>
+    <string name="measureon">Measure once a day</string>
+
+    <string name="control_is_power">Control is power</string>
+    <string name="learn_new_habit">Learn a new good habit</string>
+    <string name="set_reminder">Set Time</string>
+    <string name="time_period_set">Time period Set</string>
+    <string name="edit">Edit</string>
+    <string name="darkmode">Dark Mode</string>
+    <string name="next">Next</string>
+    <string name="yourcurrent">Your current reminder is set to</string>
+
+
+    <string-array name="meal_1_1">
+
+        <item>Cars</item>
+        <item>Bikes</item>
+
+
+    </string-array>
+    <string-array name="meal_1_2">
+
+        <item>Cars</item>
+        <item>Bikes</item>
+
+
+    </string-array>
+    <string name="title_activity_login">Sign in</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+
+
+    <string name="item_1">Today</string>
+    <string name="item_2">Nine Factor</string>
+    <string name="item_3">Chew</string>
+    <string name="item_4">Support</string>
+    <string name="item_5">Search</string>
+    <string name="service_name">Notification Service</string>
+    <string name="tts">Tts</string>
+    <string name="enter_mobile_number">Enter Email Addresss</string>
+    <string name="enter_valid_password">Enter Password</string>
+    <string name="errorString">Getting Error</string>
+    <string name="network_error">No internet connection</string>
+
+
+    <!-- Notifications Feature !-->
+    <!-- TextViews Texts !-->
+    <!-- Notification Channel ID and Name !-->
+    <string name="notification_channel_id">100</string>
+    <string name="notification_channel_name">Notification channel</string>
+    <string name="notification_channel_description">Notification channel description</string>
+
+</resources>
+
+
